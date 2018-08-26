@@ -102,7 +102,7 @@ describe('calculator functionality', function() {
   //   expect(running_total.getAttribute('value')).to.eventually.equal('Infinity')
   // })
 
-  it('should display NaN when dividing by 0', function(){
+  it('should display NaN when divided by zero', function(){
     running_total = element(by.css('#running_total'))
     element(by.css('#number5')).click();
     element(by.css('#operator_divide')).click();

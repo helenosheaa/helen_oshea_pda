@@ -11,31 +11,31 @@ describe('calculator', function () {
     assert.equal(true, true)
   })
 
-  it('it should be able to add', function(){
+  it('should be able to add', function(){
     calculator.previousTotal = 1;
     calculator.add(4);
     assert.equal(calculator.runningTotal, 5);
   })
 
-  it('it should be able to subtract', function(){
+  it('should be able to subtract', function(){
     calculator.previousTotal = 7;
     calculator.subtract(4);
     assert.equal(calculator.runningTotal, 3);
   })
 
-  it('it should be able to multiply', function(){
+  it('should be able to multiply', function(){
     calculator.previousTotal = 3;
     calculator.multiply(5);
     assert.equal(calculator.runningTotal, 15);
   })
 
-  it('it should be able to divide', function(){
+  it('should be able to divide', function(){
     calculator.previousTotal = 21;
     calculator.divide(7);
     assert.equal(calculator.runningTotal, 3);
   })
 
-  it('it should be able to click multiple buttons', function(){
+  it('should be able to click multiple buttons', function(){
     calculator.numberClick(2);
     calculator.numberClick(4);
     calculator.numberClick(0);
@@ -45,7 +45,7 @@ describe('calculator', function () {
 
 
 
-  it('it should be able to chain operatior clicks', function(){
+  it('should be able to chain operatior clicks', function(){
     calculator.numberClick(2);
     calculator.operatorClick('+');
     calculator.numberClick(2);
@@ -55,7 +55,7 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 16);
   })
 
-  it('it should be able to clear the running total', function(){
+  it('should be able to clear the running total', function(){
     calculator.numberClick(2);
     calculator.operatorClick('+');
     calculator.numberClick(2);
